@@ -46,7 +46,7 @@ compiledPlaylistDict = {}
 
 print(f"Compiling {userDisplayName}'s Playlists Into New Text File.....")
 try:
-    numOfUserPlaylists = len(userPlaylists)
+    numOfUserPlaylists = len(userPlaylists['items'])
     for playlistNum in range(numOfUserPlaylists):
 
         playlistJson = userPlaylists['items'][playlistNum]
